@@ -225,7 +225,7 @@ header.autoshow.scrollOn {
 }
 
 header.autoshow.scrollOff {
-  opacity: ;
+  opacity: 0;
   top: -120px;
 }
 
@@ -286,7 +286,7 @@ header.smaller {
   -o-backdrop-filter: blur(10px);
   -moz-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  border: none;*/
+  border: none;
 }
 
 header.header-mobile.header-float .header-inner,
@@ -1115,7 +1115,7 @@ header.header-mobile.header-center #logo-center{
   display: none;
 }
 
-//* =============== content =============== */
+/* =============== content =============== */
 #content {
   width: 100%;
   background: #ffffff;
@@ -2643,7 +2643,8 @@ a.btn-slider:hover {
 
 a.btn-main:hover,
 .btn-main:hover,
-a.btn-main.btn-line:hover {
+a.btn-main.btn-line:hover,
+a.btn-main:hover:visited {
   color: #fff;
   background: var(--btn-hover-bg);
 }
@@ -2746,7 +2747,7 @@ a.btn-main.fx-slide{
 a.btn-main.fx-slide span{
   display: block;
   position: relative;
-  transition: all .3s ease-in-out;
+  transition: transform .3s ease-in-out, opacity .3s ease-in-out;
 }
 
 a.btn-main.fx-slide:hover span{
@@ -2766,7 +2767,7 @@ a.btn-main.fx-slide:before {
   width: 100%;
   opacity: 0;
   transform: translate(0, -100%);
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 a.btn-main.btn-dark-trans{
@@ -3705,7 +3706,7 @@ ul.cols-2{
 
 .ul-style-4 li {
   margin: 2px 0 2px 0;
-  display: ;
+  display: block;
   font-weight: 500;
 }
 
@@ -5542,7 +5543,8 @@ footer .widget{
   border-color: #555;
 }
 
-.widget_tags li a:hover border-color: #eceff3;
+.widget_tags li a:hover {
+  border-color: #eceff3;
 }
 
 footer .widget {
@@ -5737,7 +5739,7 @@ footer .tiny-border span {
 
 
 .de-step-s1 {
-  overflow: ;
+  overflow: hidden;
   position: relative;
   padding: 0 25px;
   height: 100%;
@@ -10513,9 +10515,9 @@ margin-bottom: 40px;
      z-index: 101;
      -webkit-transform: scale(1.2);
      transform: scale(1.2);
-     -webkit-box-shadow: 8px 8px 10px 0px rgba(0, 0, 0, 0.calc());
-    -moz-box-shadow: 8px 8px 10px 0px rgba(0, 0, 0, 0.calc());
-    box-shadow: 8px 8px 10px 0px rgba(0, 0, 0, 0.calc());
+     -webkit-box-shadow: 8px 8px 10px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 8px 8px 10px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 8px 8px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .typed-strings p {
